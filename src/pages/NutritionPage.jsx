@@ -1,9 +1,10 @@
-import React from 'react'
-import FruitsList from '../components/FruitsList/FruitsList'
+import React from 'react';
+import FruitsList from '../components/FruitsList/FruitsList';
+import styles from '../pages/NutritionPage.module.css';
 
 function NutritionPage() {
   return (
-	<div>
+	<div className={styles.nutrition_content_container}>
 		<FruitsList/>
 	</div>
   )
