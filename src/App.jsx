@@ -5,6 +5,7 @@ import ContactPage from './pages/ContactPage';
 import SmoothiePage from './pages/SmoothiePage';
 import MainPage from './pages/MainPage';
 import Layout from './layout/Layout';
+import { FruitsProvider } from './context/FruitsProvider';
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <FruitsProvider>
+        <RouterProvider router={router}/>
+      </FruitsProvider>
     </>
   )
 }

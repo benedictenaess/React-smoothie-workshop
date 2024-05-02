@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
-const fruitsContext = useContext();
+const fruitsContext = createContext();
 
 function FruitsProvider({children}) {
 	
