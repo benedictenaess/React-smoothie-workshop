@@ -1,10 +1,10 @@
 import React from 'react'
-import FruitsList from '../components/FruitsList/FruitsList'
+import FruitsProvider from '../context/FruitsProvider'
 
 function NutritionPage() {
   return (
 	<div>NutritionPage
-		<FruitsList/>
+		<FruitsProvider/>
 	</div>
   )
 }
