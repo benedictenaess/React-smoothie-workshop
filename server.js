@@ -3,8 +3,9 @@ import express from 'express';
 import fetch from 'node-fetch';
 
 const PORT = 4000;
-
 const app = express();
+
+app.use(cors());
 
 app.listen(PORT, ()=>{
 	console.log(`Server is running on PORT ${PORT}`);

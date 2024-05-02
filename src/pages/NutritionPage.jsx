@@ -1,8 +1,11 @@
 import React from 'react'
+import FruitsList from '../components/FruitsList/FruitsList'
 
 function NutritionPage() {
   return (
-	<div>NutritionPage</div>
+	<div>NutritionPage
+		<FruitsList/>
+	</div>
   )
 }
 
