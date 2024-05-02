@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './Fruit.module.css';
 
 function Fruit({fruitProp}) {
 	const {calories, sugar, fat, carbohydrates, protein} = fruitProp.nutritions;
   return (
-	<div>
+	<div className={styles.fruitData_container}>
 		<h4>{fruitProp.name}</h4>
 		<ul>
 			<li>Sugar: {sugar}</li>
